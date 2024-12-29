@@ -1,5 +1,8 @@
 <mvc:View
+    controllerName="ui5.tutorial.controller.App"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <Text text="HI BROTHER"></Text>
+    <Button 
+        text="Diga Salve"
+        press=".onShowHello"></Button>
 </mvc:View>
