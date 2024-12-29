@@ -5,4 +5,9 @@
     <Button 
         text="Diga Salve"
         press=".onShowHello"></Button>
+    <Input 
+        value="{/recipient/name}"
+        description="Salve {/recipient/name}"
+        valueLiveUpdate="true"
+        width="60%"></Input>
 </mvc:View>
