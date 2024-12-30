@@ -1,8 +1,9 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
     "sap/ui/model/json/JSONModel",
-    "sap/ui/model/resource/ResourceModel"
- ], (UIComponent, JSONModel, ResourceModel) => {
+    "sap/ui/model/resource/ResourceModel",
+    "sap/ui/Device"
+ ], (UIComponent, JSONModel, ResourceModel, Device) => {
     "use strict";
  
     return UIComponent.extend("ui5.tutorial.Component", {
@@ -22,6 +23,11 @@ sap.ui.define([
           };
           const oModel = new JSONModel(oData);
           this.setModel(oModel);
+
+          // set device model
+			const oDeviceModel = new JSONModel(Device);
+			oDeviceModel.setDefaultBindingMode("OneWay");
+			this.setModel(oDeviceModel, "device");
 
           //Creates the view based on the url/hash
           this.getRouter().initialize();
