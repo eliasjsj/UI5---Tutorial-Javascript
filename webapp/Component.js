@@ -7,12 +7,8 @@ sap.ui.define([
  
     return UIComponent.extend("ui5.tutorial.Component", {
        metadata : {
-          "interfaces": ["sap.ui.core.IAsyncContentCreation"],
-          "rootView": {
-             "viewName": "ui5.tutorial.view.App",
-             "type": "XML",
-             "id": "app"
-          }
+          interfaces: ["sap.ui.core.IAsyncContentCreation"],
+          metadata: "json"
        },
  
        init() {
@@ -21,7 +17,7 @@ sap.ui.define([
           // set data model
           const oData = {
              recipient : {
-                name : "World"
+                name : "Camarada"
              }
           };
           const oModel = new JSONModel(oData);
