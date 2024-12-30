@@ -1,7 +1,13 @@
 <core:FragmentDefinition
     xmlns="sap.m"
     xmlns:core="sap.ui.core">
-    <Dialog 
+    <Dialog
         id="helloDialog"
-        title="Salve {/recipient/name}"></Dialog>
+        title="Salve {/recipient/name}">
+        <beginButton>
+            <Button
+                text="{i18n>dialogCloseButtonText}"
+                press=".onCloseDialog" />
+        </beginButton>
+    </Dialog>
 </core:FragmentDefinition>
