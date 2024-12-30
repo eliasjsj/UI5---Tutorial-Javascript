@@ -8,6 +8,6 @@
 <ol>
 <li>Baixe o repositório</li>
 <li>Dentro da pasta do repositório, instale localmente o UI5 Tooling, usando o comando "npm i -D @ui5/cli"</li>
-<li>Execute o comando "ui5 init" dentro da pasta raiz do repositório</li>
+<li>Instale as dependências listadas no Package.json (devDependencies)
 <li>Execute o comando "npm start" para iniciar um novo Web Server, que abrirá a página inicial do aplicativo.</li>
 </ol>
